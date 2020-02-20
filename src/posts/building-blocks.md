@@ -44,20 +44,17 @@ A comment is a note written in the code source with the purpose of explaing the 
 In the JavaScript environment, a value is any meaningful chunk of bytes. There are 7 basic vlaue types in JavaScript.
 
 ```javascript
-var number = 0 // number represents numbers of any kind,integer or floating-point
+// number represents numbers of any kind,integer or floating-point
+var number = 0
 
-var string = "and away we go" // string for representing text. Single quotes, doouble quotes and backticks are used to mark strings
+// string for representing text. Single quotes, double quotes and backticks are used to mark strings
+var string = "and away we go"
 
-var happy = true // a boolean is a value that is either
+var happy = true // a boolean is a value that is either true
 var sad = false // or false
 
-var doesSheLikeMe = null //for unknown values
-
-var sym = Symbol() // for unique identifiers
-
-var obj = Object() // are any number of key value pairs, used for complex data structures
-
-// Any data type that is not an object is known as a primitive.
+// null for unknown values
+var doesSheLikeMe = null
 ```
 
 ## Variables
@@ -72,7 +69,7 @@ Variables, also called bindings, are containers used to store data. A variable i
 var greeting = "Hello" // Variable is declared and assigned a value.
 ```
 
-- Theres a difference between assigning a variable and declaring one.
+Theres a difference between assigning a variable and declaring one.
 
 ```javascript
 var Daphne // here we are just declaring a variable,it is uninitialized.
@@ -84,12 +81,12 @@ console.log(daphne)
 // sucka
 ```
 
-- Variable names are case sensitive, that means capitilization matters. We usually use camelCase for multi-word names
+Variable names are case sensitive, that means capitilization matters. We usually use camelCase for multi-word names
 
 ```javascript
 var properCamelCase
 ```
 
-- A variable cannot be any of the words already used as functions in the JS language.<a href="https://www.w3schools.com/js/js_reserved.asp" target="_blank">List of reserved JavaScript names.</a>
+A variable cannot be any of the words already used as functions in the JS language. <a href="https://www.w3schools.com/js/js_reserved.asp" target="_blank">List of reserved JavaScript names.</a>
 
 ### Operators
