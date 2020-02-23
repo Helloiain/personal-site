@@ -25,7 +25,13 @@ export default ({ data }) => (
     `}
     render={data => (
       <div>
-        <h1>Articles</h1>
+        <h1
+          css={css`
+            margin-bottom: 3rem;
+          `}
+        >
+          Latest Articles
+        </h1>
         <ul
           css={css`
             margin: 0;
@@ -46,21 +52,7 @@ export default ({ data }) => (
                   color: inherit;
                 `}
               >
-                <h4
-                  css={css`
-                    font-weight: 400;
-                    margin-bottom: 0;
-                  `}
-                >
-                  {node.frontmatter.title}{" "}
-                </h4>
-                <p
-                  css={css`
-                    color: rgba(0, 0, 0, 0.6);
-                  `}
-                >
-                  {node.frontmatter.date}
-                </p>
+                <p>{node.frontmatter.title} </p>
               </Link>
             </li>
           ))}

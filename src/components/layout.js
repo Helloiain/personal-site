@@ -55,9 +55,7 @@ export default ({ children }) => (
           list-style: none;
           float: right;
         `}
-      >
-        <ListLink to="/portfolio/">Portfolio</ListLink>
-      </ul>
+      ></ul>
     </header>
     {children}
   </div>

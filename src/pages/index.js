@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import GitHubButton from "react-github-btn"
 
 import PostList from "../components/post-list"
+import ProjectList from "../components/project-list"
 import Layout from "../components/layout"
 
 export default () => {
@@ -40,6 +41,7 @@ export default () => {
         </GitHubButton>
       </div>
       <PostList />
+      <ProjectList />
     </Layout>
   )
 }

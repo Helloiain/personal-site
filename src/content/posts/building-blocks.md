@@ -1,12 +1,12 @@
 ---
-title: "JavaScript; The Building Blocks"
+title: "JavaScript, The Building Blocks"
 date: "2019-07-03"
 template: "post"
 slug: "JavaScript The Building Blocks"
 tags: ["javascript", "fundamentals"]
 ---
 
-I realized this pretty late it feels, the value in being able to share the things you've learned. I'm still not so great at it; I'm sure the more you read, the plainer it'll be. But i've noticed, from those that get it done well, how it seems to enrich everything it touches. I kinda want that.
+I realized this pretty late it feels, the value in being able to share the things you've learned. I'm still not so great at it; I'm sure the more you read, the plainer it'll be. But i've noticed from those that get it done well, how it seems to enrich everything it touches. I kinda want that.
 
 > <em>"We must leave freedom for the mind to wander about in trying to solve the problems…. The successful user of mathematics is practically an inventor of new ways of obtaining answers in given situations. Even if the ways are well known, it is usually much easier for him to invent his own way— a new way or an old way— than it is to try to find it by looking it up."
 > <cite>--Richard Feynman</cite></em>
