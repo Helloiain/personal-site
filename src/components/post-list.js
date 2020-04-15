@@ -25,13 +25,37 @@ export default ({ data }) => (
     `}
     render={data => (
       <div>
-        <h1
+        <div
           css={css`
-            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
           `}
         >
-          Latest Articles
-        </h1>
+          <h1
+            css={css`
+              margin-bottom: 3rem;
+            `}
+          >
+            Latest Articles
+          </h1>
+          <Link
+            to="/writing/"
+            css={css`
+              text-decoration: none;
+            `}
+          >
+            <span
+              css={css`
+                padding: 0.5rem;
+                color: #000;
+                background: #d8d8d8;
+                border-radius: 1px;
+              `}
+            >
+              View All
+            </span>
+          </Link>
+        </div>
         <ul
           css={css`
             margin: 0;

@@ -4,6 +4,8 @@ import { css } from "@emotion/core"
 import { FaGithub } from "react-icons/fa"
 import { MdLaunch } from "react-icons/md"
 
+const colors = ["#61dafb", "#663399", "#036e00"]
+
 export default ({ data }) => (
   <StaticQuery
     query={graphql`
@@ -53,7 +55,11 @@ export default ({ data }) => (
                     list-style: none;
                   `}
                 >
-                  <div>
+                  <div
+                    css={css`
+                      margin-bottom: 3rem;
+                    `}
+                  >
                     <h4>{node.frontmatter.name}</h4>
                     <p>{node.frontmatter.discription}</p>
                     {node.frontmatter.technologies.map((tech, index) => {
@@ -64,7 +70,7 @@ export default ({ data }) => (
                             padding: 0.2rem;
                             margin-right: 1rem;
                             color: #fff;
-                            background: #464646;
+                            background: ${colors[index]};
                             border-radius: 1px;
                           `}
                         >
@@ -75,6 +81,8 @@ export default ({ data }) => (
                   </div>
                   <div>
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href={node.frontmatter.url}
                       css={css`
                         display: block;
@@ -85,6 +93,8 @@ export default ({ data }) => (
                       </span>
                     </a>
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href={node.frontmatter.github}
                       css={css`
                         display: block;

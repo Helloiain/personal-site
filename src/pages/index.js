@@ -29,8 +29,8 @@ export default () => {
             font-size: 1.2rem;
           `}
         >
-          I am a full-stack developer and student. Along with tinkering around
-          in web apps; I write about modern JavaScript, Node.js and development.
+          I am a full-stack developer. Along with tinkering around in web apps,
+          I write about modern JavaScript, Node.js and development.
         </p>
         <GitHubButton
           href="https://github.com/Helloiain"
@@ -40,7 +40,6 @@ export default () => {
           HelloIain
         </GitHubButton>
       </div>
-      <PostList />
       <ProjectList />
     </Layout>
   )
