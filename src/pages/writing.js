@@ -7,7 +7,7 @@ const Writing = ({ data }) => (
   <Layout>
     <ul
       css={css`
-        margin: 6rem 0 0 0;
+        margin: 150px 0;
       `}
     >
       {data.allMarkdownRemark.edges.map(({ node }) => (

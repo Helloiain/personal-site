@@ -4,8 +4,6 @@ import { css } from "@emotion/core"
 import { FaGithub } from "react-icons/fa"
 import { MdLaunch } from "react-icons/md"
 
-const colors = ["#61dafb", "#663399", "#036e00"]
-
 export default ({ data }) => (
   <StaticQuery
     query={graphql`
@@ -70,7 +68,7 @@ export default ({ data }) => (
                             padding: 0.2rem;
                             margin-right: 1rem;
                             color: #fff;
-                            background: ${colors[index]};
+                            background: #282a30;
                             border-radius: 1px;
                           `}
                         >
