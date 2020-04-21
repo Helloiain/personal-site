@@ -83,6 +83,11 @@ export default ({ data }) => (
                       rel="noopener noreferrer"
                       href={node.frontmatter.url}
                       css={css`
+                        background: #e5e5e5;
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        border-radius: 3px;
+                        color: #000;
                         display: block;
                       `}
                     >
@@ -95,6 +100,10 @@ export default ({ data }) => (
                       rel="noopener noreferrer"
                       href={node.frontmatter.github}
                       css={css`
+                        border-radius: 3px;
+                        padding: 5px;
+                        background: #e5e5e5;
+                        color: #000;
                         display: block;
                       `}
                     >
