@@ -9,6 +9,7 @@ export default () => {
         margin: auto;
       `}
     >
+      {/* Discord: Fiddler#3647 */}
       <p>&#169; Ian Parkinson | Built with ❤️</p>
     </div>
   )
