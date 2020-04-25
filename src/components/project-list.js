@@ -89,6 +89,9 @@ export default ({ data }) => (
                         border-radius: 3px;
                         color: #000;
                         display: block;
+                        &:hover {
+                          background: #b3c7f5;
+                        }
                       `}
                     >
                       <span>
@@ -105,6 +108,9 @@ export default ({ data }) => (
                         background: #e5e5e5;
                         color: #000;
                         display: block;
+                        &:hover {
+                          background: #b3c7f5;
+                        }
                       `}
                     >
                       <span>
