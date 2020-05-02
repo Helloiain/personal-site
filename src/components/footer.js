@@ -3,14 +3,16 @@ import { css } from "@emotion/core"
 
 export default () => {
   return (
-    <div
+    <footer
       css={css`
         max-width: 800px;
         margin: auto;
       `}
     >
-      {/* Discord: Fiddler#3647 */}
       <p>&#169; Ian Parkinson | Built with ❤️</p>
-    </div>
+      <div
+        dangerouslySetInnerHTML={{ __html: "<!-- Discord: Fiddler#3647 -->" }}
+      />
+    </footer>
   )
 }
