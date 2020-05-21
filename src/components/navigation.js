@@ -1,103 +1,37 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
-
 import { css } from "@emotion/core"
 
-import Resume from "../content/Resume.pdf"
-
 export default () => {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener("scroll", headOnScroll)
-    return window.removeEventListener("scroll", headOnScroll)
-  }, [])
-
-  const headOnScroll = () => {
-    if (window.scrollY > 20) setScrolled(true)
-    else setScrolled(false)
-  }
   return (
-    <>
-      <header
+    <header css={css``}>
+      <div
         css={css`
-          position: fixed;
-          background-color: #282a30;
-          color: #fff;
-          z-index: 2;
-          top: 0;
-          left: 0;
-          width: 100%;
+          max-width: 800px;
+          margin: auto;
+          padding-top: 2rem;
+          display: flex;
+          justify-content: space-between;
         `}
       >
-        <div
+        <Link
+          to="/"
           css={css`
-            max-width: 800px;
-            margin: auto;
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-between;
+            color: inherit;
+            text-decoration: none;
+            text-shadow: none;
+            background-image: none;
           `}
         >
-          <Link
-            to="/"
+          <h3
             css={css`
-              color: inherit;
-              text-decoration: none;
-              text-shadow: none;
-              background-image: none;
+              margin: 0;
             `}
           >
-            <h3
-              css={css`
-                display: inline;
-              `}
-            >
-              Ian Parkinson
-            </h3>
-          </Link>
-          <ul
-            css={css`
-              list-style: none;
-              float: right;
-            `}
-          >
-            <li
-              css={css`
-                float: left;
-                margin-right: 1rem;
-              `}
-            >
-              <Link
-                to="/writing/"
-                css={css`
-                  text-decoration: none;
-                  color: #fff;
-                `}
-              >
-                Writing
-              </Link>
-            </li>
-            <li
-              css={css`
-                float: left;
-              `}
-            >
-              <a
-                href={Resume}
-                rel="nooppener noreferrer"
-                target="_blank"
-                css={css`
-                  text-decoration: none;
-                  color: #fff;
-                `}
-              >
-                Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </header>
-    </>
+            Ian Parkinson
+          </h3>
+        </Link>
+      </div>
+    </header>
   )
 }

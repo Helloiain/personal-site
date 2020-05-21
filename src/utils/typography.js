@@ -8,9 +8,17 @@ const typography = new Typography({
       name: "Libre Caslon Text",
       styles: [],
     },
+    {
+      name: "Inter",
+      styles: [],
+    },
+    {
+      name: "Roboto",
+      styles: [],
+    },
   ],
-  headerFontFamily: ["Libre Caslon Text"],
-  bodyFontFamily: ["Georgia", "serif"],
+  headerFontFamily: ["Inter"],
+  bodyFontFamily: ["Roboto", "serif"],
 })
 
 export default typography

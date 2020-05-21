@@ -7,7 +7,7 @@ const Writing = ({ data }) => (
   <Layout>
     <ul
       css={css`
-        margin: 150px 0;
+        margin: 3rem 0;
       `}
     >
       {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -18,21 +18,8 @@ const Writing = ({ data }) => (
             margin-bottom: 2rem;
           `}
         >
-          <Link
-            to={node.fields.slug}
-            css={css`
-              text-decoration: none;
-              color: inherit;
-            `}
-          >
-            <h3
-              css={css`
-                margin: 0;
-              `}
-            >
-              {node.frontmatter.title}
-            </h3>
-            <p>{node.frontmatter.date}</p>
+          <Link to={node.fields.slug} css={css``}>
+            {node.frontmatter.title}
           </Link>
         </li>
       ))}
