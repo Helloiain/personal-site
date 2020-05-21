@@ -2,7 +2,6 @@ import React from "react"
 import { css } from "@emotion/core"
 
 import Navigation from "./navigation.js"
-import Footer from "./footer"
 
 export default ({ children }) => {
   return (
@@ -16,7 +15,6 @@ export default ({ children }) => {
       >
         {children}
       </div>
-      <Footer />
     </>
   )
 }

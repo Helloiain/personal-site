@@ -11,7 +11,7 @@ export default ({ data }) => {
         <h1
           css={css`
             font-size: 3rem;
-            margin-top: 150px;
+            margin-top: 3rem;
             margin-bottom: 0.5rem;
           `}
         >
