@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
+import logo from "../../static/noun_Sword_in_Stone.svg"
 
 export default () => {
   return (
@@ -21,15 +22,16 @@ export default () => {
             text-decoration: none;
             text-shadow: none;
             background-image: none;
+            border: none;
           `}
         >
-          <h3
+          <img
             css={css`
               margin: 0;
+              width: 40px;
             `}
-          >
-            Ian Parkinson
-          </h3>
+            src={logo}
+          />
         </Link>
       </div>
     </header>

@@ -13,24 +13,29 @@ export default () => {
           max-width: 60%;
         `}
       >
-        <h1
-          css={css`
-            font-size: 3rem;
-            margin-bottom: 1rem;
-          `}
-        >
-          Hello
-        </h1>
-        <p
-          css={css`
-            font-size: 1.2rem;
-          `}
-        >
+        <h1>Hello, I'm Ian.</h1>
+        <p>
           {" "}
           I am a software engineer. Along with tinkering around in web apps I{" "}
           <Link to="/writing/">write</Link> about modern JavaScript,
           development, and whatever else I may have going on in my life.
         </p>
+        <h4>Things I've done.</h4>
+        <ul
+          style={{
+            margin: 0,
+            listStyle: "none",
+          }}
+        >
+          <li>
+            <a href="https://romanemperors.netlify.app/">Timeline App</a>
+          </li>
+          <li>
+            <a href="https://eager-albattani-24fdc1.netlify.app/">
+              Credit Card Form
+            </a>
+          </li>
+        </ul>
       </div>
     </Layout>
   )

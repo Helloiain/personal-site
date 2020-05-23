@@ -13,6 +13,8 @@ I realized this pretty late it feels, the value in being able to share the thing
 
 ## Bits
 
+---
+
 At the smallest scale in the computer, information is stored as bits. The bit works similarly to decimal numbers but instead of 10 different digits, it has only 2, and the weight of each increases by a factor of 2 from right to left.
 
 <br />
@@ -28,6 +30,8 @@ At the smallest scale in the computer, information is stored as bits. The bit wo
 
 ## Comments
 
+---
+
 A comment is a note written in the code source with the purpose of explaing the code.
 
 ```javascript
@@ -40,6 +44,8 @@ A comment is a note written in the code source with the purpose of explaing the 
 ```
 
 ## Values and Types
+
+---
 
 In the JavaScript environment, a value is any meaningful chunk of bytes. There are 7 basic vlaue types in JavaScript.
 
@@ -58,6 +64,8 @@ var doesSheLikeMe = null
 ```
 
 ## Variables
+
+---
 
 Variables, also called bindings, are containers used to store data. A variable is basically like a box and you can store just about anything in it - not just strings and numbers, but also complex data and even entire functions. There are three kinds of variable declarations in JavaScript.
 

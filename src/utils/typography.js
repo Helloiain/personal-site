@@ -1,7 +1,7 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "16px",
+  baseFontSize: "18px",
   baseLineHeight: 1.6,
   googleFonts: [
     {
@@ -13,12 +13,12 @@ const typography = new Typography({
       styles: [],
     },
     {
-      name: "Roboto",
+      name: "Roboto Slab",
       styles: [],
     },
   ],
-  headerFontFamily: ["Inter"],
-  bodyFontFamily: ["Roboto", "serif"],
+  headerFontFamily: ["Libre Caslon Text"],
+  bodyFontFamily: ["Roboto Slab", "serif"],
 })
 
 export default typography
