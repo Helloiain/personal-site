@@ -1,8 +1,16 @@
 ::selection {
   background: #ffb7b7;
 }
+
+html,
+body {
+  min-height: 100%;
+  overflow: auto;
+}
+
 body {
   color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
 }
 
 h1,
@@ -25,5 +33,5 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: #ff593b;
 }

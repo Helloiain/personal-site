@@ -6,6 +6,7 @@
 
 module.exports = {
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -92,11 +93,19 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        icon: `static/noun_Sword_in_Stone.svg`,
       },
     },
   ],
