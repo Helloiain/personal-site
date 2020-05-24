@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "@emotion/core"
 
 import Navigation from "./navigation.js"
 
@@ -8,10 +7,10 @@ export default ({ children }) => {
     <>
       <Navigation />
       <div
-        css={css`
-          margin: 0 auto;
-          max-width: 800px;
-        `}
+        style={{
+          margin: "0 auto",
+          maxWidth: "800px",
+        }}
       >
         {children}
       </div>

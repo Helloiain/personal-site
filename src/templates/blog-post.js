@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "@emotion/core"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
@@ -9,11 +8,11 @@ export default ({ data }) => {
     <Layout>
       <div>
         <h1
-          css={css`
-            font-size: 3rem;
-            margin-top: 3rem;
-            margin-bottom: 0.5rem;
-          `}
+          style={{
+            fontStyle: "3rem",
+            marginTop: "3rem",
+            marginBottom: "0.5rem",
+          }}
         >
           {post.frontmatter.title}
         </h1>

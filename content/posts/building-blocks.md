@@ -53,7 +53,8 @@ In the JavaScript environment, a value is any meaningful chunk of bytes. There a
 // number represents numbers of any kind,integer or floating-point
 var number = 0
 
-// string for representing text. Single quotes, double quotes and backticks are used to mark strings
+/* string for representing text. Single quotes, double quotes and backticks
+ are used to mark strings */
 var string = "and away we go"
 
 var happy = true // a boolean is a value that is either true
